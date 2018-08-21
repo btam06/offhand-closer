@@ -1,0 +1,9 @@
+{
+    "name": "offhand-closer",
+    "version": "0.0.0",
+    "description": "Hide or delete elements on click",
+    "author": "Avery Tam <btam06@gmail.com>",
+    "license": "MIT",
+    "repository": "btam06/offhand-closer",
+    "main": "lib/closer.js"
+}
