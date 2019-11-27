@@ -16,3 +16,39 @@ Hiding sets the data-invisible attribute to true, deleting removes the element f
 
 ## data-invisible doesn't actually do anything?
 No, it doesn't.  You have to set what it actually does in your CSS.  This is intended to allow more flexibility than strictly setting display: none or any other style attributes directly.  Also this package is intended just to manipulate the DOM, how you style that is up to you.
+`[data-invisible="true"] {
+    display: none;
+}`
+
+# Examples
+## Deleting
+`<div>
+    <div id="message_1">
+        <span data-delete="#message_1">Delete</span>
+        <p>Message 1</p>
+    </div>
+</div>`
+
+## Hiding
+`<div>
+    <div id="message_2">
+        <span data-hide="#message_2">Hide</span>
+        <p>Message 2</p>
+    </div>
+</div>`
+
+## Hiding, but storing in session storage
+`<div>
+    <div id="message_3">
+        <span data-remember="session" data-hide="#message_3">Hide</span>
+        <p>Message 3</p>
+    </div>
+</div>`
+
+## Hiding, but storing in local storage
+`<div>
+    <div id="message_4">
+        <span data-remember="local" data-hide="#message_4">Hide</span>
+        <p>Message 4</p>
+    </div>
+</div>`
