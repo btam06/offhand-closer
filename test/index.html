@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<style>
-			[data-invisible] {
+			[data-invisible="true"] {
 				display: none;
 			}
 		</style>
@@ -19,6 +19,20 @@
             <div id="message_2">
                 <span data-hide="message_2">Hide</span>
                 <p>Message 2</p>
+            </div>
+        </div>
+		<h1>Hiding Messages (Session Storage)</h1>
+        <div>
+            <div id="message_3">
+                <span data-remember="session" data-hide="message_3">Hide</span>
+                <p>Message 3</p>
+            </div>
+        </div>
+		<h1>Hiding Messages (Local Storage)</h1>
+        <div>
+            <div id="message_4">
+                <span data-remember="local" data-hide="message_4">Hide</span>
+                <p>Message 4</p>
             </div>
         </div>
     </body>
