@@ -3,6 +3,17 @@ This tool is intended to provide extended html functionality with no dependencie
 
 All the options can be set up directly on your markup just by setting a few data attributes.  These attributes are preset, but if you really want you can configure them to be something else to prevent overlap with another package you may be using.
 
+# Initialization
+To initialize closer, all you have to do is call it on the root element you want to use it on.  This is intended so you can use it exclusively in a contained area if you don't want it to automatically bind events to your whole DOM.
+```
+closer('body');
+```
+
+This call also accepts a config object if you want to change the attributes to something else
+```
+closer('body', { 'data-invisible': 'data-hidden' });
+```
+
 # Attributes
 Attribute           | Description
 --------------------| -------------------
